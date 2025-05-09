@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kontak Kami - Smart Kid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    function kirimPesan() {
+      alert("✅ Pesan Anda telah terkirim!");
+    }
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Smart Kid</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="features.html">Fitur</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Hubungi Kami</h2>
+    <p>Isi formulir di bawah ini untuk mendaftar atau bertanya mengenai layanan kami.</p>
+
+    <form onsubmit="kirimPesan(); return false;" style="max-width:500px; margin-top:20px;">
+      <label>Nama Lengkap:<br><input type="text" required style="width:100%; padding:10px; margin:5px 0;"></label><br>
+      <label>Email:<br><input type="email" required style="width:100%; padding:10px; margin:5px 0;"></label><br>
+      <label>Minat Belajar:<br>
+        <select style="width:100%; padding:10px; margin:5px 0;">
+          <option value="">-- Pilih --</option>
+          <option>Teknologi</option>
+          <option>Bahasa Asing</option>
+          <option>Bisnis & Ekonomi</option>
+        </select>
+      </label><br>
+      <button type="submit" class="btn-primary" style="margin-top:10px;">Kirim</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Kid - Belajar Jadi Mudah</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Smart Kid</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="features.html">Fitur</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-text">
+        <h2>🎓 Belajar Modern & Fleksibel</h2>
+        <p>Tingkatkan skillmu dengan kursus interaktif dari Smart Kid. Belajar kapan pun dan di mana pun jadi lebih menyenangkan.</p>
+        <a href="contact.html" class="btn-primary">🚀 Mulai Sekarang</a>
+      </div>
+      <div class="hero-img">
+        <img src="assets/book.svg" alt="Belajar Online" style="max-width:100%; height:auto;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- POPUP PROMO -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h3>🎉 Promo Spesial</h3>
+      <p>Diskon 50% untuk pengguna baru! Daftar sekarang dan nikmati akses ke ribuan materi pembelajaran.</p>
+      <a href="contact.html" class="btn-secondary">Daftar Sekarang</a>
+    </div>
+  </div>
+
+  <!-- FITUR SECTION -->
+  <main class="container">
+    <h2>Kenapa Pilih Smart Kid?</h2>
+    <div class="gallery">
+      <div class="feature-card">
+        <img src="assets/flexible.svg" alt="Fleksibilitas">
+        <div class="feature-info">
+          <h4>🕒 Fleksibel</h4>
+          <p>Belajar di waktu luangmu dengan materi yang bisa diakses kapan saja.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="assets/quality.svg" alt="Konten Berkualitas">
+        <div class="feature-info">
+          <h4>📚 Berkualitas</h4>
+          <p>Materi disusun oleh para ahli dan praktisi profesional di bidangnya.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="assets/interactive.svg" alt="Interaktif">
+        <div class="feature-info">
+          <h4>💬 Interaktif</h4>
+          <p>Diskusi langsung dengan mentor dan peserta lain lewat forum belajar.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- FOOTER -->
+  <footer style="background:#1e3a8a; color:white; text-align:center; padding:1.5rem 0;">
+    <div class="container">
+      <p>&copy; 2025 Smart Kid. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+    setTimeout(() => {
+      document.getElementById('popup').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
